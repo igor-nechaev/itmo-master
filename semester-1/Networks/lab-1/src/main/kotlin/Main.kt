@@ -25,11 +25,8 @@ fun labFirst(n: Int, messages: List<String>): List<String> {
         baseStation.message.toBits().toPlusMinus().applyCode(baseStation.code)
     }.multiplex()
 
-    return buildList {
-        baseStations.forEach { baseStation ->
-            val message = signal.decodeBits(baseStation.code).decodeToString()
-            add(message)
-        }
+    return baseStations.map { baseStation ->
+        signal.decodeBits(baseStation.code).decodeToString()
     }
 }
 

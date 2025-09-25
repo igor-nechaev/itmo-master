@@ -1,5 +1,5 @@
 import com.example.exmple.labFirst
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class LabFirstTest {
