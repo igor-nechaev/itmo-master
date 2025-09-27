@@ -80,8 +80,8 @@ fun getWalshCodes(n: Int): Array<IntArray> {
     hadamard[0][0] = 1
     var k = 1
     while (k < n) {
-        for (i in 0..<k) {
-            for (j in 0..<k) {
+        for (i in 0..< k) {
+            for (j in 0..< k) {
                 hadamard[i + k][j] = hadamard[i][j]
                 hadamard[i][j + k] = hadamard[i][j]
                 hadamard[i + k][j + k] = -hadamard[i][j]
