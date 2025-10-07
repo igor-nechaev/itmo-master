@@ -108,7 +108,7 @@ CDN + Redis кеш с парами alias:shorter_id для часто испол
 ### UML-диаграмма
 ![C4 diagram](C4_tiny_clone.png)
 
-### Анализ узких мест\
+### Анализ узких мест
 Инкремент -> Snowflake\
 Горизонтальное масштабирование -> consistent hashing\
 Не популярные alias долго ищутся -> индекс по alias\
